@@ -70,4 +70,79 @@ persons[0] = "John";
 persons[1] = "Cater";
 persons[2] = 56;
 console.log(persons[2] + " " + persons.length);
+//Mutating and modify array
+marks.push(333);
+console.log(marks);
+// on starting
+marks.unshift(333);
+console.log(marks);
+// Array Methods
+//Converting Arrays to Strings
+const Laptop = ["Hp", "Dell", "Apple", "Lenovo"];
+console.log(Laptop.toString());
+// Concat() Method
+var A = ["Sanaa", "Rachel", "Rakish"]
+var B = ["karen", "Roman"];
+var D = ["Nehru", "Mani"];
+var C = A.concat(B, D);
+console.log(C);
+// join() Method
+var A = ["Sanaa", "Rachel", "Rakish"]
+var B = ["karen", "Roman"];
+var C = A.concat(B);
+var D = C.join("*");
+console.log(D);
+console.log(C);
+// pop() method
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits.pop());
+// push() method
+const fruit1 = ["Banana", "Orange", "Apple", "Mango"];
+fruit1.push("kiwi");
+console.log(fruit1);
+// Javascript Array shift()
+const bike = ["Honda", "Tvs", "Hero", "Basal"]
+console.log(bike.shift());
+console.log(bike);
+// Javascript Array unshift()
+const Vegetables = ["Bridal", "Pea", "LadyFinger"];
+Vegetables.unshift("Lemon");
+console.log(Vegetables);
+// Array Delete()
+const Vegetable = ["Bridal", "Pea", "LadyFinger"];
+delete Vegetable[0];
+console.log(Vegetable);
+// Merging three arrays
+const array1 = ["Cecilie", "Lone"];
+const array2 = ["Emil", "Tobias", "Linus"];
+const array3 = ["Robin", "Morgan"];
+const myChildren = array1.concat(array2, array3);
+console.log(myChildren);
+// Merging array with values
+const myArray = ["Emil", "Tobias", "Linus"];
+const myChildrens = myArray.concat("Peter");
+console.log(myChildrens);
+// Array slice()
+const Names = ["Rakesh", "Ram", "Ravi", "Ragu", "Rahim"];
+console.log(Names);
+var myName = Names.slice(1, 4);
+console.log(myName);
+// For Negative indexing
+const Name1 = ["Rakesh", "Ram", "Ravi", "Ragu", "Rahim"];
+console.log(Name1);
+var myName = Name1.slice(-3, -1);
+console.log(myName);
+// Array splice()
+const Name2 = ["Ajit", "Ram", "Akram", "Ragu", "Rahim"];
+Name2.splice(2, 2, "Neha", "Rakesh"); // For deleting value i am giving 1
+console.log(Name2);
+const Name3 = ["Ajit", "Ram", "Akram", "Ragu", "Rahim"];
+Name3.splice(2, 2,); // only deleting values
+console.log(Name3);
+// For Each method
+var s = ["Sanjay", "Aman", "karan"];
+s.forEach(loop);
+function loop(value, index) { // we can provide a index also
+	console.log(value + " " + index);
+};
 
