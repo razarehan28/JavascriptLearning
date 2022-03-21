@@ -145,4 +145,42 @@ s.forEach(loop);
 function loop(value, index) { // we can provide a index also
 	console.log(value + " " + index);
 };
-
+// Array map()
+let ary = [10, 30, 50, 60];
+let d = ary.map(check);
+console.log(d);
+function check(y) {
+	return y * 10;
+}
+// Array of object with map()
+let ar = [
+	{ fname: "Ram", lname: "kumar" },
+	{ fname: "Rakish", lname: "kumar" },
+	{ fname: "Ragib", lname: "khan" },
+];
+var c = ar.map(test);
+console.log(c);
+function test(x) {
+	return x.fname;
+}
+// Array filter()
+let arry = [12, 32, , 11, 43, 15];
+let z = arry.filter(checkAdult);
+console.log(z);
+function checkAdult(p) {
+	return p >= 18;
+}
+// Array reduce()
+let numbers = [20, 30, 40, 50, 60];
+let sum = numbers.reduce(myfun, 100);// Take initial value also
+console.log("The total sum is " + sum);
+function myfun(total, value) {
+	return total + value;
+}
+// Array reduceRight()
+let number = [300, 30, 40, 50, 60];
+let sums = number.reduceRight(myfun, 100);// Take initial value also
+console.log("The total sum is " + sums);
+function myfun(total, value) {
+	return total + value;
+}
