@@ -8,7 +8,18 @@
 	<title>Javascript Learning</title>
 </head>
 
-<body>
+<body onresize="resizeFunction()">
+	<button onclick="openWindow()">Click to open</button>
+	<button onclick="closeWindow()">Click to close</button>
+	<button onclick="moveWindow()">Click to move</button>
+	<button onclick="resizeWindow()">Click to ResizeWindow</button>
+	<button onclick="scrollWindow()" style="position: fixed;">Scroll Window</button>
+	<div>
+		<p style="width: 1000px;border: 2px solid red;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
+			dolores repellendus fuga soluta voluptas
+			doloremque, itaque earum tenetur doloribus blanditiis eius sequi minus dolorum voluptatum provident atque!
+			Recusandae incidunt illum aut soluta eum hic aliquam deserunt! Impedit, laudantium! Quasi aliquid, accusamus</p>
+	</div>
 	<!-- Calling a event -->
 	<!-- <button onclick="hello()">ClickMe</button> -->
 	<!--on double click-->
@@ -39,7 +50,18 @@
 			<input type="button" id="btn" value="submit">
 		</form>
 	</div>
-	<script src="./HtmlDOM/dom.js"></script>
+	<button onclick="newFunction()">click</button>
+	<button onclick="myBack()">HistoryBack</button>
+	<button onclick="myForward()">HistoryForward</button>
+	<button onclick="myGo()">HistoryGo</button>
+	<button onclick="myFunction()">Try it</button>
+	<button onclick="myFunc()"> Confirm Try it</button>
+	<button onclick="myFun()">Prompt Try it</button>
+	<button onclick="setTimeout(myFunction, 3000)"> setTime Try it</button>
+	<button onclick="setInterval(myTimer, 1000)"> setInterval Try it</button>
+	<button onclick="clearInterval(myVar)">Stop time</button> <!-- For clearInterval-->
+
+	<script src="./BOM JavaScript/bom.js"></script>
 </body>
 
 </html>

@@ -21,7 +21,7 @@ console.log(element);
 function hello() {
 	alert("Hello everyone");
 }
-EventListener
+//EventListener
 document.getElementById("heading").addEventListener
 	("click", function (e) {
 		let variable;
@@ -117,5 +117,19 @@ var target = document.getElementById("list");
 var oldElement = target.children[0];
 console.log(oldElement);
 target.removeChild(oldElement);
+//DOM Contains Method()
+var parentElement = document.getElementById("myFirst"); // It will return Boolean value True/False
+var target = document.getElementById("list");
+var find = parentElement.contains(target);
+console.log(find);
+// hasAttribute()
+var target = document.getElementById("myFirst"); // it will also return true or false
+var find = target.hasAttribute("class")
+console.log(find);
+// hasChildNodes()
+var target = document.getElementById("myFirst"); // it will also return true or false
+var find = target.hasChildNodes();
+console.log(find);
+
 
 
