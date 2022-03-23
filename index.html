@@ -6,6 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Javascript Learning</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 <body onresize="resizeFunction()">
@@ -15,10 +17,12 @@
 	<button onclick="resizeWindow()">Click to ResizeWindow</button>
 	<button onclick="scrollWindow()" style="position: fixed;">Scroll Window</button>
 	<div>
-		<p style="width: 1000px;border: 2px solid red;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
+		<p style="width: 1000px;border: 2px solid red;">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+			Possimus
 			dolores repellendus fuga soluta voluptas
 			doloremque, itaque earum tenetur doloribus blanditiis eius sequi minus dolorum voluptatum provident atque!
-			Recusandae incidunt illum aut soluta eum hic aliquam deserunt! Impedit, laudantium! Quasi aliquid, accusamus</p>
+			Recusandae incidunt illum aut soluta eum hic aliquam deserunt! Impedit, laudantium! Quasi aliquid, accusamus
+		</p>
 	</div>
 	<!-- Calling a event -->
 	<!-- <button onclick="hello()">ClickMe</button> -->
@@ -60,8 +64,20 @@
 	<button onclick="setTimeout(myFunction, 3000)"> setTime Try it</button>
 	<button onclick="setInterval(myTimer, 1000)"> setInterval Try it</button>
 	<button onclick="clearInterval(myVar)">Stop time</button> <!-- For clearInterval-->
-
-	<script src="./BOM JavaScript/bom.js"></script>
+	<div class="container">
+		<h1>Student list</h1>
+		<ul id="students"></ul>
+		<button id="myBtn" class="btn btn-primary">Your Button</button>
+		<button class="btn btn-primary">Fetch button</button>
+		<div id="content"></div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+	integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+	crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+	integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+	crossorigin="anonymous"></script>
+	<script src="./JS Web APIs/api.js"></script>
 </body>
 
 </html>

@@ -108,7 +108,7 @@ function myFun() {
 	if (person == null) {
 		text = "User cancelled the prompt.";
 	} else {
-		text = "Hello " + person + "How are you today?";
+		text = "Hello " + person + "How are you today";
 	}
 	console.log(text);
 }
