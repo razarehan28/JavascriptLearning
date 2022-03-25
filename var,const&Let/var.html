@@ -57,6 +57,25 @@
 		}
 		// Here x is 10
 		document.getElementById("demo").innerHTML = x;
+		// Variable Hoisting
+		num = 5;  // // Assign 5 to num
+		console.log(num);
+		var num;  // Declare num
+		// Example 2 will also print same result
+		var num;
+		num = 5;   // Assign 5 to num
+		console.log(num); // 5
+		// function hoisting
+		getName();
+		console.log(z);
+		var z = 7;
+		function getName() {
+			console.log("Hello Rehan");
+		}
+		// JavaScript only hoists declarations, not initializations.
+		var p = 5;  // Initialize x
+		console.log("x is " + p + " and y is " + q);  // Display x and y
+		var q = 7;  // Initialize y
 	</script>
 
 </body>
