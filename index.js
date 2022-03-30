@@ -50,4 +50,33 @@ const member1 = {
 }
 let fullName = member.fullName.bind(member1);
 console.log(fullName());
-
+// Destructuring Array
+let user = ["Rehan", 23, "Kolkata", ["Male", 25000]]; // Nested Array
+let [Name, age, city, [gender, salary]] = user;  // Destructuring
+console.log(Name);
+console.log(age);
+console.log(city);
+console.log(gender);
+console.log(salary);
+// Destructuring using Fuction
+let users = ([Name, age, city, [gender, salary]]) => {
+	console.log(Name);
+	console.log(age);
+	console.log(city);
+	console.log(gender);
+	console.log(salary);
+}
+users(["Rahul", 25, "Delhi", ["Male", 25000]]);
+// Destructuring Object
+const laptop = {
+	model: "HP Pavilion",
+	Age: "23 Days",
+	Gender: "male",
+	net: 1233,
+	start: () => {
+		console.log("Started");
+	}
+}
+const { model, Age, Gender, net, start } = laptop;
+console.log(model, Age, Gender, net, start);
+start();
