@@ -12,7 +12,7 @@ let ar = [
 	{ fname: "Rakish", lname: "kumar" },
 	{ fname: "Ragib", lname: "khan" },
 ];
-var c = ar.map(test);
+let c = ar.map(test);
 console.log(c);
 function test(x) {
 	return x.fname;

@@ -91,7 +91,4 @@ function postData() {
 		.then(data => console.log(data)
 		)
 }
-// console.log("Before running getData")
-// getData()
-// console.log("After running getData")
 postData();

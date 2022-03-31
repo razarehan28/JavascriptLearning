@@ -10,8 +10,8 @@ console.log("Data type is " + (typeof marks));
 let isDrive = true;
 console.log("Data type is " + (typeof isDrive));
 //Null
-let nullVar = null;
-console.log("Data type is " + (typeof nullVar));
+let nulllet = null;
+console.log("Data type is " + (typeof nulllet));
 //undefined
 let undef = undefined;
 console.log("Data type is " + (typeof undef));
@@ -35,70 +35,7 @@ let stMarks = {
 console.log(stMarks);
 // Functions
 function findName() {
-
 }
 console.log(typeof findName);
 let date = new Date();
 console.log(typeof date);
-//Arithemetic Operator
-// Addition
-var a = 3;
-var b = 4;
-var c = a + b;
-document.write(c);
-// subtraction
-var a = 3;
-var b = 5;
-var c = a - b;
-console.log(c);
-// Multiplication
-var a = 6;
-var b = 5;
-var c = a * b;
-console.log(c);
-// Division
-var a = 55;
-var b = 5;
-var c = a / b;
-console.log(c);
-// Modulus 
-var a = 69;
-var b = 5;
-var c = a % b;
-console.log(c);
-// Exponentiation
-var a = 2;
-var b = 5;
-var c = a ** b;
-console.log(c);
-// Increment 
-var a = 2;
-var b = 5;
-a++;
-console.log(a + b);
-// Decrement
-var a = 2;
-var b = 5;
-a--;
-console.log(a + b);
-//Assingment Operator
-var a = 2;
-var b = 5;
-a += b;//(a=a+b)
-console.log(a);
-var a = 2;
-var b = 5;
-a *= b;//(a=a*b)
-console.log(a);
-var a = 2;
-var b = 10;
-a /= b;//(a=a/b)
-console.log(a);
-var a = 21;
-var b = 5;
-a %= b;//(a=a%b)
-console.log(a);
-var a = 25;
-var b = 5;
-a **= b;//(a= a**b)
-console.log(a);

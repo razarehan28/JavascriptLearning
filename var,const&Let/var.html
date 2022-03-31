@@ -17,9 +17,9 @@
 		console.log('var');
 		// variable in js
 		// var,let,const
-		var firstname = "Raza";
+		let firstname = "Raza";
 		console.log(firstname);
-		var city = 'Delhi';
+		let city = 'Delhi';
 		console.log(city);
 		// const variable(if i will assign once i can't make changes)
 		const ownersName = "Raza";
@@ -60,22 +60,21 @@
 		// Variable Hoisting
 		num = 5;  // // Assign 5 to num
 		console.log(num);
-		var num;  // Declare num
 		// Example 2 will also print same result
-		var num;
+		let num;
 		num = 5;   // Assign 5 to num
 		console.log(num); // 5
 		// function hoisting
 		getName();
 		console.log(z);
-		var z = 7;
+		let z = 7;
 		function getName() {
 			console.log("Hello Rehan");
 		}
 		// JavaScript only hoists declarations, not initializations.
-		var p = 5;  // Initialize x
+		let p = 5;  // Initialize x
 		console.log("x is " + p + " and y is " + q);  // Display x and y
-		var q = 7;  // Initialize y
+		let q = 7;  // Initialize y
 	</script>
 
 </body>

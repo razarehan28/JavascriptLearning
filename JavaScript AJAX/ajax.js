@@ -30,10 +30,6 @@ xhr.getResponseHeader('Content-type', 'application/json');
 xhr.onprogress = function () {
 	console.log('On progress');
 }
-// xhr.onreadystatechange = function () {
-//     console.log('ready state is ', xhr.readyState);
-
-// }
 // What to do when response is ready
 xhr.onload = function () {
 	if (this.status === 200) {
@@ -47,7 +43,6 @@ xhr.onload = function () {
 params = `{"name":"test34sad545","salary":"123","age":"23"}`;
 xhr.send(params);
 console.log("We are done!");
-
 let popBtn = document.getElementById('popBtn');
 popBtn.addEventListener('click', popHandler);
 function popHandler() {

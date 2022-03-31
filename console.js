@@ -5,6 +5,6 @@ console.log(true)
 console.log([34, 2, 7, 6])
 // Creating object 
 console.log({
-    harry: 'this',
-    marks: 34
+	harry: 'this',
+	marks: 34
 })

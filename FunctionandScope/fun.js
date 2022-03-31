@@ -59,31 +59,31 @@ function myFunction() {
 }
 myFunction();
 // Global variable
-var a = "Simform Solutions"; //It acn also access from outside.
+let a = "Simform Solutions"; //It acn also access from outside.
 function hello() {
 	console.log(a);
 }
 hello();
 console.log(a);
 // Normal Function
-var hello = function (Name) { // Before ES6 Version we used like this
+let hello = function (Name) { // Before ES6 Version we used like this
 	return `Hello ${Name}`;
 }
 console.log(hello("Rehan"));
 // Arrow Function
-var hello = (Name, age) => `Hello ${Name}-${age}`; // (when we have single line of code in function)After ES6 Version we used like this
+let hello = (Name, age) => `Hello ${Name}-${age}`; // (when we have single line of code in function)After ES6 Version we used like this
 console.log(hello("Rehan", 23));
-var hello;
+let hello;
 hello = () => {
 	console.log("Hello World!");
 }
 hello();
 // Arrow Function without the brackets or the return keyword
-var welcome = () => "Hello World welcome!";
+let welcome = () => "Hello World welcome!";
 console.log(welcome());
 // Arrow function with Parameters
-var hello = (val) => "Hello " + val;
+let hello = (val) => "Hello " + val;
 console.log(hello("Universe!"));
 // Arrow Function Without Parentheses
-var hello = val => "Hello " + val; // if we have only one parameter in an Arrow Function, we can skip the parentheses
+let hello = val => "Hello " + val; // if we have only one parameter in an Arrow Function, we can skip the parentheses
 console.log(hello("Universe!"));

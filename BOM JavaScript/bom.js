@@ -1,25 +1,19 @@
 // Window Height and Width
 // innerHeight
-function resizeFunction() { // dont need to refresh
-	console.clear();
-	var inHeight = window.innerHeight; // innerHeight : 880
-	console.log('innerHeight : ' + inHeight);
-	// outerHeight
-	var ouHeight = window.outerHeight; // outerHeight : 985
-	console.log('outerHeight : ' + ouHeight);
-}
+let innerHeight = window.innerHeight; // innerHeight : 880
+console.log('innerHeight : ' + innerHeight);
+// outerHeight
+let outerHeight = window.outerHeight; // outerHeight : 985
+console.log('outerHeight : ' + outerHeight);
 // innerWidth
-function resizeFunction() { // dont need to refresh
-	console.clear();
-	var inWidth = window.innerWidth; // innerWidth : 1920
-	console.log('innerWidth : ' + inWidth);
-	// outerWidth
-	var ouWidth = window.outerWidth; // outerWidth : 1920
-	console.log('outerWidth : ' + ouWidth);
-}
+let innerWidth = window.innerWidth; // innerWidth : 1920
+console.log('innerWidth : ' + ineerWidth);
+// outerWidth
+let outerWidth = window.outerWidth; // outerWidth : 1920
+console.log('outerWidth : ' + outerWidth);
 // Window open&close method
 // open Window
-var myWindow;
+let myWindow;
 function openWindow() {
 	myWindow = window.open("", "", "width = 500px, height = 200px, top = 100px, left = 200px"); // if we use name as _parent then it will open in same window
 	myWindow.document.write("<p>This is my window</p>"); // We cant open a other url.
@@ -93,7 +87,7 @@ function myFunction() {
 }
 // Confirm Box
 function myFunc() {
-	var text;
+	let text;
 	if (confirm("Press the button")) {
 		text = "You pressed OK!";
 	} else {
