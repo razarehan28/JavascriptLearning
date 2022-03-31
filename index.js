@@ -80,3 +80,11 @@ const laptop = {
 const { model, Age, Gender, net, start } = laptop;
 console.log(model, Age, Gender, net, start);
 start();
+// Function Currying
+let multiply = (x, y) => {
+	console.log(x * y);
+}
+let multiplyByTwo = multiply.bind(this, 2); // currying
+multiplyByTwo(5);
+let multiplyByThree = multiply.bind(this, 6);
+multiplyByThree(4);
