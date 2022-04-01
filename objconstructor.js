@@ -69,10 +69,7 @@ class Programmer extends employee {
 		return a * b;
 	}
 }
-//rehan = new employee("Rehan", 56, "Division");
-//console.log(rehan.joiningYear());
-//console.log(employee.add(34,7));
 Rohan = new Programmer("Rohan", 12, 1, "go", "ro2234");
 console.log(Rohan);
 console.log(Rohan.favoriteLanguage());
-console.log(Programmer.multiply(3,4));
+console.log(Programmer.multiply(3, 4));

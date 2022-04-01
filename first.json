@@ -1,0 +1,23 @@
+{
+	"name": "Rehan",
+	"score": "11.45",
+	"isAdmin": "False",
+	"licence": null,
+	"shopItem": [
+		"food",
+		"grocery",
+		"sweets"
+	],
+	"myobj": {
+		"name": "Rahul",
+		"marks": 46,
+		"shopItem": [
+			"food",
+			"grocery",
+			"sweets",
+			{
+				"a": true
+			}
+		]
+	}
+}

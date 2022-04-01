@@ -27,7 +27,7 @@ else {
 }
 // not equal to 
 const Numbers = 54;
-const vars = 56;
+const number = 56;
 if (Number != 34) {
 	console.log(" The number is not  34"); // false 
 }
@@ -38,8 +38,8 @@ else {
 	console.log("The age is not 54");
 }
 // if variable is exists or not
-if (vars) {
-	console.log("my vars is not defined");
+if (let) {
+	console.log("my let is not defined");
 }
 // Boolean 
 if (doesDrive) {
@@ -84,16 +84,16 @@ for (let i = 0; i < 10; i++) {
 	console.log(i);
 }
 //For in loops
-var obj = {
+let obj = {
 	firstName: "Rehan", // Creating Object
 	lastName: "Khan",
 	Age: 23,
 	email: 'rrpathan687@gmail.com',
 };
-for (var key in obj);
+for (let key in obj);
 console.log(obj);
 // For in loop in array
-var arr = [23, 45, 21, 22, 234];
+let arr = [23, 45, 21, 22, 234];
 for (var a in arr);
 console.log(arr);
 // while loop

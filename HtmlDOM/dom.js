@@ -21,7 +21,7 @@ console.log(element);
 function hello() {
 	alert("Hello everyone");
 }
-EventListener
+//EventListener
 document.getElementById("heading").addEventListener
 	("click", function (e) {
 		let variable;
@@ -54,68 +54,81 @@ document.querySelector('.container').addEventListener
 	});
 //DOM Traversal
 document.getElementById("this").parentElement.style.background = "blue"; // given style
-var x = document.getElementById("this").parentElement;
+let x = document.getElementById("this").parentElement;
 console.log(x);
 // Children and childNodes
-var x = document.getElementById("this").children[1];// if i want to target a particular children
-var x = document.getElementById("this").childNodes;
-console.log(x);
+let d = document.getElementById("this").children[1];// if i want to target a particular children
+let e = document.getElementById("this").childNodes;
+console.log(d);
 // First Child and Last Child
 document.getElementById("this").firstElementChild.style.background = "blue";
-var x = document.getElementById("this").firstElementChild;
-console.log(x);
+let z = document.getElementById("this").firstElementChild;
+console.log(z);
 // Last child
 document.getElementById("this").lastElementChild.style.background = "blue";
-var x = document.getElementById("this").lastElementChild.innerText;
-console.log(x);
+let y = document.getElementById("this").lastElementChild.innerText;
+console.log(y);
 // nextSibling and previousSibling
 //document.getElementById("this").firstElementChild.style.background = "blue";
-var x = document.getElementById("myName").nextElementSibling.innerHTML;
-console.log(x);
+let sibLing = document.getElementById("myName").nextElementSibling.innerHTML;
+console.log(sibLing);
 //previousElementSibling
-var x = document.getElementById("myName").previousElementSibling.innerHTML;
-console.log(x);
+let prev = document.getElementById("myName").previousElementSibling.innerHTML;
+console.log(prev);
 //Create Element and Text Node
 //create elements
-var newElement = document.createElement("p"); // paragraph
-console.log(newElement);
+let newElements = document.createElement("p"); // paragraph
+console.log(newElements);
 // Text node
-var newText = document.createTextNode("This is just a text");
-console.log(newText);
+let newTexts = document.createTextNode("This is just a text");
+console.log(newTexts);
 //Create comment
-var newComment = document.createComment("This is just a comment");
+let newComment = document.createComment("This is just a comment");
 console.log(newComment);
 //Append child And InsertBefore
-var newElement = document.createElement("p"); // paragraph
-var newText = document.createTextNode("This is just a text");
-newElement.appendChild(newText);
-//document.getElementById("this").appendChild(newElement);
-console.log(newElement);
+let Element = document.createElement("p"); // paragraph
+let Text = document.createTextNode("This is just a text");
+newElement.appendChild(Text);
+console.log(Element);
 // Insert Before
-var target = document.getElementById("this");
-target.insertBefore(newElement, target.childNodes[2]);
+let targets = document.getElementById("this");
+targets.insertBefore(newElement, targets.childNodes[2]);
 // Insert Adjacent element and Insert Adjacent HTML
-var newElement = document.createElement("h2");
-var newText = document.createTextNode("This is just Text");
-newElement.append(newText);
-var target = document.getElementById("this");
-target.insertAdjacentElement('beforebegin', newElement);
+let element = document.createElement("h2");
+let newtext = document.createTextNode("This is just Text");
+newElement.append(newtext);
+let tar = document.getElementById("this");
+tar.insertAdjacentElement('beforebegin', element);
 // Insert adjacent HTML
-var target = document.getElementById("this");
+let targ = document.getElementById("this");
 newElement = "<h2>This is new heading</h2>";
-target.insertAdjacentHTML("beforeend", newElement);
+targ.insertAdjacentHTML("beforeend", newElement);
 //replaceChild and removeChild
-var newElement = document.createElement("li");
-var newText = document.createTextNode("guava");
+let newElement = document.createElement("li");
+let newText = document.createTextNode("guava");
 newElement.appendChild(newText);
-var target = document.getElementById("list");
-var oldElement = target.children[0];
-console.log(oldElement);
+let list = document.getElementById("list");
+let oldElements = target.children[0];
+console.log(oldElements);
 target.replaceChild(newElement, oldElement);
 // Remove child
-var target = document.getElementById("list");
-var oldElement = target.children[0];
+let lists = document.getElementById("list");
+let oldElement = target.children[0];
 console.log(oldElement);
 target.removeChild(oldElement);
+//DOM Contains Method()
+let parentsElement = document.getElementById("myFirst"); // It will return Boolean value True/False
+let newTarget = document.getElementById("list");
+let finds = parentsElement.contains(newTarget);
+console.log(find);
+// hasAttribute()
+let myFirst = document.getElementById("myFirst"); // it will also return true or false
+let attribute = myFirst.hasAttribute("class")
+console.log(attribute);
+// hasChildNodes()
+let target = document.getElementById("myFirst"); // it will also return true or false
+let find = target.hasChildNodes();
+console.log(find);
+
 
 

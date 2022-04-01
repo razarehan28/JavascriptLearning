@@ -81,16 +81,16 @@ console.log(marks);
 const Laptop = ["Hp", "Dell", "Apple", "Lenovo"];
 console.log(Laptop.toString());
 // Concat() Method
-var A = ["Sanaa", "Rachel", "Rakish"]
-var B = ["karen", "Roman"];
-var D = ["Nehru", "Mani"];
-var C = A.concat(B, D);
+let x = ["Sanaa", "Rachel", "Rakish"]
+let y = ["karen", "Roman"];
+let g = ["Nehru", "Mani"];
+let b = A.concat(y, b);
 console.log(C);
 // join() Method
-var A = ["Sanaa", "Rachel", "Rakish"]
-var B = ["karen", "Roman"];
-var C = A.concat(B);
-var D = C.join("*");
+let A = ["Sanaa", "Rachel", "Rakish"]
+let B = ["karen", "Roman"];
+let C = A.concat(B);
+let D = C.join("*");
 console.log(D);
 console.log(C);
 // pop() method
@@ -125,12 +125,12 @@ console.log(myChildrens);
 // Array slice()
 const Names = ["Rakesh", "Ram", "Ravi", "Ragu", "Rahim"];
 console.log(Names);
-var myName = Names.slice(1, 4);
-console.log(myName);
+let myNames = Names.slice(1, 4);
+console.log(myNames);
 // For Negative indexing
 const Name1 = ["Rakesh", "Ram", "Ravi", "Ragu", "Rahim"];
 console.log(Name1);
-var myName = Name1.slice(-3, -1);
+let myName = Name1.slice(-3, -1);
 console.log(myName);
 // Array splice()
 const Name2 = ["Ajit", "Ram", "Akram", "Ragu", "Rahim"];
@@ -140,7 +140,7 @@ const Name3 = ["Ajit", "Ram", "Akram", "Ragu", "Rahim"];
 Name3.splice(2, 2,); // only deleting values
 console.log(Name3);
 // For Each method
-var s = ["Sanjay", "Aman", "karan"];
+let s = ["Sanjay", "Aman", "karan"];
 s.forEach(loop);
 function loop(value, index) { // we can provide a index also
 	console.log(value + " " + index);
@@ -158,7 +158,7 @@ let ar = [
 	{ fname: "Rakish", lname: "kumar" },
 	{ fname: "Ragib", lname: "khan" },
 ];
-var c = ar.map(test);
+let c = ar.map(test);
 console.log(c);
 function test(x) {
 	return x.fname;
